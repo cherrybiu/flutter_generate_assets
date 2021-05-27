@@ -38,6 +38,8 @@ class ResourceDartBuilder {
 
   bool isPreview = true;
 
+  bool isRecursive = true;
+
   void generateResourceDartFile(String className) {
     print('Generating files for Project: $projectRootPath');
     stopWatch();
@@ -155,7 +157,7 @@ class ResourceDartBuilder {
       final List<FileSystemEntity> entries =
           directory.listSync(recursive: false);
       for (final FileSystemEntity entity in entries) {
-        generateImageFileWithPath(entity.path, imageSet, dirList, false);
+        generateImageFileWithPath(entity.path, imageSet, dirList, isRecursive);
       }
     } else if (FileSystemEntity.isFileSync(fullPath)) {
       if (platformExcludeFiles.contains(basename(fullPath))) {
