@@ -1,5 +1,5 @@
 name: "example_for_generator"
-author: caijinglong<cjl_spy@163.com>
+author: cherrybiu<m15274906257@163.com>
 description: example
 version: 0.0.1
 homepage: https://github.com
@@ -7,3 +7,4 @@ flutter:
   assets:
     - images/
     - assets/
+    - fonts/
