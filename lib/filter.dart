@@ -52,7 +52,7 @@ class Filter {
     } catch (e, st) {
       print(e);
       print(st);
-      print('The $key of fgen.yaml must be a string array');
+      print('The $key of sgen.yaml must be a string array');
       exit(2);
     }
   }

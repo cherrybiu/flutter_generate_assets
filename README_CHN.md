@@ -19,7 +19,7 @@
 
 ## 截图
 
-![img](https://raw.githubusercontent.com/cherrybiu/some_asset/master/asset_gen_3.0.gif)
+![asset_gen_3.0](README.assets/asset_gen_3.0.gif)
 
 ## 安装及使用
 
@@ -59,25 +59,25 @@ pub --version
 在 flutter 目录下执行
 
 ```bash
-fgen
+sgen
 ```
 
 or
 
 ```bash
-fgen -s .
+sgen -s .
 ```
 
 注意这个`.` , 这里第二个目录就是你的 flutter 目录, 可以省略,省略后默认在当前文件夹
 
-也就是在 flutter 项目下使用`fgen`即可
+也就是在 flutter 项目下使用`sgen`即可
 
 ### 支持的命令行参数
 
-使用 `$ fgen -h` 或 `$ fgen --help` 可以查看帮助文档
+使用 `$ sgen -h` 或 `$ sgen --help` 可以查看帮助文档
 
 ```bash
-fgen -h
+sgen -h
 -w, --[no-]watch    Continue to monitor changes after execution of orders.
                     (defaults to on)
 
@@ -103,7 +103,7 @@ fgen -h
 
 -o 是生成的资源文件地址,需要包含`.dart`
 
-如果你在 flutter 目录下执行, 仅需 fgen 即可
+如果你在 flutter 目录下执行, 仅需 sgen 即可
 
 可以加 --no-watch 参数来不监听文件变化,仅生成一次资源文件
 
@@ -134,7 +134,7 @@ fgen -h
 
 ## 配置文件
 
-配置文件为约定式，**不支持**通过命令指定，该文件为项目根目录下（与`pubspec.yaml`同级）下的`fgen.yaml`
+配置文件为约定式，**不支持**通过命令指定，该文件为项目根目录下（与`pubspec.yaml`同级）下的`sgen.yaml`
 
 ### 排除和导入
 
@@ -209,3 +209,7 @@ class R {
 ```
 
 [pub global]: https://dart.dev/tools/pub/cmd/pub-global#running-a-script-from-your-path
+
+
+
+注: 在原作者基础上提供满足自己团队的需求,提供命令行可选参数来控制等

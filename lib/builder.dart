@@ -23,7 +23,7 @@ class ResourceDartBuilder {
   ResourceDartBuilder(String projectRootPath, this.outputPath) {
     this.projectRootPath = projectRootPath.replaceAll('$separator.', '');
 
-    final File yamlFile = File('$projectRootPath/fgen.yaml');
+    final File yamlFile = File('$projectRootPath/sgen.yaml');
     if (yamlFile.existsSync()) {
       final String text = yamlFile.readAsStringSync();
       filter = Filter(text);

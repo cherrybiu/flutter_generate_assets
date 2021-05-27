@@ -23,7 +23,7 @@ This library is based on dartlang's build library.
 
 ## screenshot
 
-![img](https://raw.githubusercontent.com/cherrybiu/some_asset/master/asset_gen_3.0.gif)
+![asset_gen_3.0](README.assets/asset_gen_3.0.gif)
 
 ## Usage
 
@@ -35,7 +35,7 @@ add `dart`,`pub` to `$PATH` environment.
 git clone https://github.com/cherrybiu/flutter_generate_assets.git
 cd flutter_generate_assets
 pub get
-dart bin/resource_generator.dart $flutter_project
+dart bin/resource_generator.dart -s $flutter_project
 ```
 
 ### pub global
@@ -48,16 +48,16 @@ pub global activate flutter_asset_generator
 
 use:
 
-`fgen`
+`sgen`
 or
-`fgen -s $flutter_project`
+sgen -s $flutter_project`
 
 ### Support options
 
-Use `$ fgen -h` or `$ fgen --help` see usage document.
+Use `$ sgen -h` or `$ sgen --help` see usage document.
 
 ```bash
-fgen -h
+sgen -h
 -w, --[no-]watch    Continue to monitor changes after execution of orders.
                     (defaults to on)
 
@@ -106,7 +106,7 @@ Because the two field names will be exactly the same.
 
 The location of the configuration file is conventional.
 Configuration via commands is **not supported**.
-The specified path is `fgen.yaml` in the flutter project root directory.
+The specified path is `sgen.yaml` in the flutter project root directory.
 
 ### exclude and include rules
 
@@ -181,3 +181,7 @@ class R {
 ```
 
 [pub global]: https://dart.dev/tools/pub/cmd/pub-global#running-a-script-from-your-path
+
+
+
+To satisfy our team's needs, I changed something based on previous author's repository.
