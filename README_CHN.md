@@ -2,9 +2,9 @@
 
 在 lib/const/resource.dart 中 自动生成 R 文件(仿安卓短命名)
 
-[中文文档](https://github.com/CaiJingLong/flutter_resource_generator/blob/master/README_CHN.md)
+[中文文档](https://github.com/cherrybiu/flutter_generate_assets/blob/master/README_CHN.md)
 
-[English](https://github.com/CaiJingLong/flutter_resource_generator)
+[English](https://github.com/cherrybiu/flutter_generate_assets)
 
 - [flutter_asset_generator](#flutter_asset_generator)
   - [截图](#截图)
@@ -19,7 +19,7 @@
 
 ## 截图
 
-![img](https://raw.githubusercontent.com/CaiJingLong/some_asset/master/asset_gen_3.0.gif)
+![img](https://raw.githubusercontent.com/cherrybiu/some_asset/master/asset_gen_3.0.gif)
 
 ## 安装及使用
 
@@ -28,8 +28,8 @@
 添加 dart 至环境变量
 
 ```bash
-git clone https://github.com/CaiJingLong/flutter_resource_generator.git
-cd flutter_resource_generator
+git clone https://github.com/cherrybiu/flutter_generate_assets.git
+cd flutter_generate_assets
 dart bin/resource_generator.dart ./example
 ```
 
@@ -181,29 +181,29 @@ images
 ```
 
 ```dart
-/// Generate by [resource_generator](https://github.com/CaiJingLong/flutter_resource_generator) library.
+/// Generate by [resource_generator](https://github.com/cherrybiu/flutter_generate_assets) library.
 /// PLEASE DO NOT EDIT MANUALLY.
 class R {
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/assets/bluetoothon-fjdfj.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/assets/bluetoothon-fjdfj.png)
   static const String ASSETS_BLUETOOTHON_FJDFJ_PNG = 'assets/bluetoothon-fjdfj.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/assets/bluetoothon.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/assets/bluetoothon.png)
   static const String ASSETS_BLUETOOTHON_PNG = 'assets/bluetoothon.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/assets/camera.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/assets/camera.png)
   static const String ASSETS_CAMERA_PNG = 'assets/camera.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/images/audio.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/images/audio.png)
   static const String IMAGES_AUDIO_PNG = 'images/audio.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/images/bluetoothoff.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/images/bluetoothoff.png)
   static const String IMAGES_BLUETOOTHOFF_PNG = 'images/bluetoothoff.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/images/child.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/images/child.png)
   static const String IMAGES_CHILD_PNG = 'images/child.png';
 
-  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_resource_generator/example/images/course.png)
+  /// ![preview](file:///Users/jinglongcai/code/dart/self/flutter_generate_assets/example/images/course.png)
   static const String IMAGES_COURSE_PNG = 'images/course.png';
 }
 ```
