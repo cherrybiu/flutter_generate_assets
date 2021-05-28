@@ -1,8 +1,8 @@
 name: flutter_generate_assets
 email: danhang152@gmail.com
 homepage: https://github.com/cherrybiu/flutter_generate_assets
-version: 0.1.0
-description: Automatically generate a resource file by scanning pubspec.yaml to correspond to the flutter's asset, imitation R file short name.
+version: 0.1.1
+description: To satisfy our team's needs, I changed something based on previous author's repository(flutter_asset_generator).
 
 environment:
   sdk: ">=2.0.0 <3.0.0"

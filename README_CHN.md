@@ -1,4 +1,4 @@
-# flutter_asset_generator
+# flutter_generate_assets
 
 在 lib/const/resource.dart 中 自动生成 R 文件(仿安卓短命名)
 
@@ -6,7 +6,7 @@
 
 [English](https://github.com/cherrybiu/flutter_generate_assets)
 
-- [flutter_asset_generator](#flutter_asset_generator)
+- [flutter_generate_assets](#flutter_generate_assets)
   - [截图](#截图)
   - [安装及使用](#安装及使用)
     - [使用源码的方式](#使用源码的方式)
@@ -53,7 +53,7 @@ pub --version
 有正确的输出
 
 安装:
-`$ pub global activate flutter_asset_generator`
+`$ pub global activate flutter_generate_assets`
 
 **使用**:
 在 flutter 目录下执行

@@ -1,4 +1,4 @@
-# flutter_asset_generator
+# flutter_generate_assets
 
 Automatically generate the dart file for pubspec.yaml
 
@@ -10,7 +10,7 @@ This library is based on dartlang's build library.
 
 [English](https://github.com/cherrybiu/flutter_generate_assets)
 
-- [flutter_asset_generator](#flutter_asset_generator)
+- [flutter_generate_assets](#flutter_generate_assets)
   - [screenshot](#screenshot)
   - [Usage](#usage)
     - [use source](#use-source)
@@ -43,7 +43,7 @@ dart bin/resource_generator.dart -s $flutter_project
 install:
 
 ```bash
-pub global activate flutter_asset_generator
+pub global activate flutter_generate_assets
 ```
 
 use:
