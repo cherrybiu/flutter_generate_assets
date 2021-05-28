@@ -1,5 +1,5 @@
 name: flutter_generate_assets
-email: m15274906257@163.com
+email: danhang152@gmail.com
 homepage: https://github.com/cherrybiu/flutter_generate_assets
 version: 0.1.0
 description: Automatically generate a resource file by scanning pubspec.yaml to correspond to the flutter's asset, imitation R file short name.
