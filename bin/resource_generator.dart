@@ -36,7 +36,7 @@ void main(List<String> args) {
   parser.addOption(
     'name',
     abbr: 'n',
-    defaultsTo: 'AssetsUtil',
+    defaultsTo: 'AssetsUtils',
     help: 'The class name for the constant.',
   );
   parser.addFlag('help', abbr: 'h', help: 'Help usage', defaultsTo: false);
