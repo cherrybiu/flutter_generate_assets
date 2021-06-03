@@ -52,7 +52,7 @@ void main(List<String> args) {
 
   final ArgResults results = parser.parse(args);
 
-  Logger().isDebug = results['debug'] as bool;
+  Logger().isDebug = results['debug'] as bool?;
 
   if (results.wasParsed('help')) {
     print(parser.usage);
@@ -60,27 +60,27 @@ void main(List<String> args) {
   }
 
   final String path = results['src'] as String;
-  final String className = results['name'] as String;
-  final String outputPath = results['output'] as String;
+  final String? className = results['name'] as String?;
+  final String? outputPath = results['output'] as String?;
   final File workPath = File(path).absolute;
 
   check(
     workPath,
     outputPath,
     className,
-    results['watch'] as bool,
+    results['watch'] as bool?,
     // results['preview'] as bool,
-    results['recursive'] as bool,
+    results['recursive'] as bool?,
   );
 }
 
 void check(
   File workPath,
-  String outputPath,
-  String className,
-  bool isWatch,
+  String? outputPath,
+  String? className,
+  bool? isWatch,
   // bool isPreview,
-  bool isRecursive,
+  bool? isRecursive,
 ) {
   final ResourceDartBuilder builder = ResourceDartBuilder(workPath.absolute.path, outputPath);
   builder.isWatch = isWatch;

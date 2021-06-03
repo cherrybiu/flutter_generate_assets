@@ -1,7 +1,7 @@
 /// Generate by [resource_generator](https://github.com/cherrybiu/flutter_generate_assets) library.
 
-class AssetsUtil {
-  const AssetsUtil._();
+class AssetsUtils {
+  const AssetsUtils._();
   static const String address = 'assets/address.png';
   static const String audio = 'assets/audio.png';
   static const String bluetooth_link = 'assets/bluetooth_link.png';

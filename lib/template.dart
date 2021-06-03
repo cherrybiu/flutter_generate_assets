@@ -4,7 +4,7 @@ import 'package:path/path.dart' as path_library;
 class Template {
   Template(this.className);
 
-  final String className;
+  final String? className;
 
   String license =
       '''/// Generate by [resource_generator](https://github.com/cherrybiu/flutter_generate_assets) library.
@@ -15,7 +15,7 @@ class Template {
 
   String get classDeclareFooter => '}\n';
 
-  String formatFiled(String path, String projectPath, bool isPreview) {
+  String formatFiled(String path, String? projectPath, bool isPreview) {
   //   if (isPreview) {
   //     return '''
   //
