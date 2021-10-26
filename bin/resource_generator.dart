@@ -24,7 +24,7 @@ void main(List<String> args) {
   parser.addOption(
     'output',
     abbr: 'o',
-    defaultsTo: 'lib${separator}app${separator}res${separator}assets_resource.dart',
+    defaultsTo: 'lib${separator}sm${separator}utils${separator}res${separator}assets_resource.dart',
     help: 'Your resource file path. \nIf it\'s a relative path, the relative flutter root directory',
   );
   parser.addOption(

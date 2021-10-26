@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:yaml/yaml.dart';
 import 'package:path/path.dart';
+import 'package:yaml/yaml.dart';
 
 import 'filter.dart';
 import 'format.dart';
@@ -154,8 +154,7 @@ class ResourceDartBuilder {
       }
       final Directory directory = Directory(fullPath);
       dirList.add(directory);
-      final List<FileSystemEntity> entries =
-          directory.listSync(recursive: false);
+      final List<FileSystemEntity> entries = directory.listSync(recursive: false);
       for (final FileSystemEntity entity in entries) {
         generateImageFileWithPath(entity.path, imageSet, dirList, isRecursive);
       }
@@ -163,9 +162,7 @@ class ResourceDartBuilder {
       if (platformExcludeFiles.contains(basename(fullPath))) {
         return;
       }
-      final String relativePath = path
-          .replaceAll('$projectRootPath$separator', '')
-          .replaceAll('$projectRootPath/', '');
+      final String relativePath = path.replaceAll('$projectRootPath$separator', '').replaceAll('$projectRootPath/', '');
       if (!imageSet.contains(path)) {
         imageSet.add(relativePath);
       }
