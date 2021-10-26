@@ -1,7 +1,7 @@
 name: flutter_generate_assets
 email: danhang152@gmail.com
 homepage: https://github.com/cherrybiu/flutter_generate_assets
-version: 0.3.1
+version: 0.2.1
 description: To satisfy our team's needs, I changed something based on previous author's repository(flutter_asset_generator).
 
 environment:
